@@ -5,12 +5,23 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="#Android反编译【二】  不满足上一次的简单反编译，决定搞一点有意思的事情  ###工具  apktool dex2jar   JD-GUI  ###关于dex2jar和JD-GUI  用于把不熟悉的smali代码变成java代码   参考用法一：http://www.jianshu.com/p/e0661ff7d955 很多网站是这个用法，但是我尝试了一下似乎方法二比较好用，下面是方法二：">
+<meta name="keywords">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/09/27/android反编译（二）/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#Android反编译【二】  不满足上一次的简单反编译，决定搞一点有意思的事情  ###工具  apktool dex2jar   JD-GUI  ###关于dex2jar和JD-GUI  用于把不熟悉的smali代码变成java代码   参考用法一：http://www.jianshu.com/p/e0661ff7d955 很多网站是这个用法，但是我尝试了一下似乎方法二比较好用，下面是方法二：">
+<meta property="og:image" content="http://7xkl1b.com1.z0.glb.clouddn.com/fanbianyi2_1.png">
+<meta property="og:image" content="http://7xkl1b.com1.z0.glb.clouddn.com/fanbianyi2_2.png">
+<meta property="og:image" content="http://7xkl1b.com1.z0.glb.clouddn.com/fanbianyi2_3.png">
+<meta property="og:image" content="http://7xkl1b.com1.z0.glb.clouddn.com/fanbianyi2_4.png">
+<meta property="og:image" content="http://7xkl1b.com1.z0.glb.clouddn.com/fanbianyi2_5.png">
+<meta property="og:updated_time" content="2016-11-27T11:54:01.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="#Android反编译【二】  不满足上一次的简单反编译，决定搞一点有意思的事情  ###工具  apktool dex2jar   JD-GUI  ###关于dex2jar和JD-GUI  用于把不熟悉的smali代码变成java代码   参考用法一：http://www.jianshu.com/p/e0661ff7d955 很多网站是这个用法，但是我尝试了一下似乎方法二比较好用，下面是方法二：">
+<meta name="twitter:image" content="http://7xkl1b.com1.z0.glb.clouddn.com/fanbianyi2_1.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,90 +70,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-postName" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/04/06/postName/" class="article-date">
-  <time datetime="2017-04-06T13:52:16.000Z" itemprop="datePublished">2017-04-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/06/postName/">postName</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/06/postName/" data-id="cj16gscnc0002htq3bbhskmaz" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/04/06/hello-world/" class="article-date">
-  <time datetime="2017-04-06T13:37:35.000Z" itemprop="datePublished">2017-04-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/06/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/06/hello-world/" data-id="cj16gscn90001htq3ed6fx01b" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-android反编译（二）" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-android反编译（二）" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/09/27/android反编译（二）/" class="article-date">
   <time datetime="2016-09-27T15:41:50.000Z" itemprop="datePublished">2016-09-27</time>
@@ -194,10 +122,19 @@
     </footer>
   </div>
   
-</article>
-
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/04/06/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
 
   
+</article>
 
 </section>
         
