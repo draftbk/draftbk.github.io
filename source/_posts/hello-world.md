@@ -1,5 +1,7 @@
 ---
 title: Update My Blog to NexT
+categories:
+- Life
 ---
 
 
